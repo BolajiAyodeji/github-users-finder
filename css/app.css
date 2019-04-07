@@ -3,6 +3,7 @@
 body{
   font-family: 'Roboto Mono'
 }
-img {
+.favicon {
   width: 10%;
+  height: auto;
 }
