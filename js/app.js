@@ -12,7 +12,7 @@ searchUser.addEventListener('keyup', (e) => {
       .then(data => {
         if(data.profile.message === 'Not Found') {
           ui.showAlert('User not found', 'alert alert-danger');
-        } else if (data.profile.message === 'net::ERR_CONNECTION_TIMED_OUT') {
+        } else if (data.profile.message === 'ERR_CONNECTION_TIMED_OUT') {
           ui.showAlert('Network error, try again..', 'alert alert-danger');
         } else {
           ui.showProfile(data.profile);
