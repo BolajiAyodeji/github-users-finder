@@ -37,7 +37,7 @@ class UI {
      </div>
     </div>
 
-    <h3 class="page-heading mb-3> Latest Repositories</h3>
+    <h3 class="page-heading mb-3">Latest Repositories</h3>
     <div id="repos"></div>
     `;
   }
@@ -47,10 +47,10 @@ class UI {
 
     repos.map((repo) => {
       output += `
-      <div class="card card-body mb-2">
+      <div class="ca rd card-body mb-2">
        <div class="row">
         <div class"col-md-6">
-        <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+        <a class="mr-3 mb-3 badge badge-info" href="${repo.html_url}" target="_blank">${repo.name}</a>
         </div>
         <div class"col-md-6">
          <span class="badge badge-primary mb-2">
@@ -60,7 +60,7 @@ class UI {
          Watchers: ${repo.watchers_count}
          </span>
          <span class="badge badge-success mb-2">
-         Forks: ${repo.forms_count}
+         Forks: ${repo.forks}
          </span>
         </div>
        </div>
